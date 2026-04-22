@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true" class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+  <main class="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary to-primary-container">
+    <div class="absolute inset-0 opacity-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOY3no59fTS8PqBMBAxAvViFvCwXXZ8ohLIKi6LsfGultJ-FcISm-W2k_jm72yiMozEVjqeR2AGH9usg3cxMbvyP0M5IBPM9nD0ilwYmbYxjvbxWuHwJVLuP05dsVW3TcYOlPCQhIUJCeUWlW-f5Zse8T2qSfIJ-KLodma5o2Gx4Vu5--V0FZE8tpg5lPaTgQvUp3nSDTeV3ALZdKEZS9J_J0tawUAhQjviXrtNFIjAXf8n__z4gRaIt7PkhUwfyec5W6s2brQ9yJ8');"></div>
+
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-secondary-container opacity-20 rounded-full blur-[120px]"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-on-primary-container opacity-20 rounded-full blur-[120px]"></div>
+
+    <div class="relative z-10 flex flex-col items-center text-center">
+      <div class="mb-8 p-6 bg-white/10 backdrop-blur-xl rounded-xl shadow-2xl shadow-primary/20 ring-1 ring-white/20">
+        <span class="material-symbols-outlined text-on-primary text-6xl">book_online</span>
+      </div>
+
+      <h1 class="text-on-primary font-headline text-5xl font-black tracking-tighter mb-2">SmartBook</h1>
+      <p class="text-on-primary-container/80 font-body text-lg font-light tracking-wide">Your Digital Concierge</p>
+
+      <div class="mt-10">
+        <a class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white/10 text-on-primary font-bold" routerLink="/onboarding-1">Start</a>
+      </div>
+    </div>
+
+    <div class="fixed bottom-24 left-0 w-full flex flex-col items-center gap-4 px-12 max-w-md mx-auto">
+      <div class="w-full h-1 bg-white/10 rounded-full overflow-hidden">
+        <div class="loading-shimmer w-full h-full"></div>
+      </div>
+      <span class="text-on-primary/40 font-label text-[10px] uppercase tracking-[0.2em] font-semibold">Authenticating Experience</span>
+    </div>
+
+    <div class="fixed bottom-12 flex items-center gap-2 opacity-30">
+      <span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+      <span class="text-on-primary font-label text-[10px] tracking-widest uppercase">Secure &amp; Private</span>
+    </div>
+  </main>
+</ion-content>

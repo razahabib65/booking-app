@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SmartBook | Booking History</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae6f4",
+                    "inverse-on-surface": "#f3effc",
+                    "on-error-container": "#93000a",
+                    "background": "#fcf8ff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#454386",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#c3c0ff",
+                    "surface-bright": "#fcf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#c3c0ff",
+                    "secondary-fixed": "#e2dfff",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#0f0069",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#a44100",
+                    "primary-container": "#4f46e5",
+                    "surface-container": "#f0ecf9",
+                    "outline": "#777587",
+                    "secondary-container": "#b6b4ff",
+                    "on-background": "#1b1b24",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-surface": "#1b1b24",
+                    "surface-tint": "#4d44e3",
+                    "outline-variant": "#c7c4d8",
+                    "on-secondary-fixed-variant": "#413f82",
+                    "on-tertiary-fixed-variant": "#7b2f00",
+                    "on-primary-fixed-variant": "#3323cc",
+                    "tertiary": "#7e3000",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#140f54",
+                    "primary-fixed": "#e2dfff",
+                    "surface-container-highest": "#e4e1ee",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dcd8e5",
+                    "on-primary-container": "#dad7ff",
+                    "surface-container-low": "#f5f2ff",
+                    "tertiary-fixed-dim": "#ffb695",
+                    "primary": "#3525cd",
+                    "surface-variant": "#e4e1ee",
+                    "on-tertiary-fixed": "#351000",
+                    "on-tertiary-container": "#ffd2be",
+                    "on-surface-variant": "#464555",
+                    "inverse-surface": "#302f39",
+                    "surface": "#fcf8ff",
+                    "secondary": "#58579b",
+                    "secondary-fixed-dim": "#c3c0ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .glass-header { backdrop-filter: blur(20px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full px-6 py-4 flex justify-between items-center bg-indigo-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-indigo-100/20 dark:shadow-none z-50">
+<div class="flex items-center gap-3">
+<button class="p-2 rounded-full hover:bg-indigo-100/50 dark:hover:bg-slate-800 transition-colors active:scale-95 duration-200 text-indigo-600 dark:text-indigo-400">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-black text-indigo-700 dark:text-indigo-300 tracking-tighter">SmartBook</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User profile picture" class="w-full h-full object-cover" data-alt="Professional male portrait with friendly expression in high-key lighting for a clean profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGCiRud9AIZmkYGwceWlLd1y-fU5NJlqEslN7bDBO7sZvK14Pl-j41Cqi7xx5jYu2flLf93UgVMuDRqKdAMqehuyyKLd_beuccePgwgHec-F6biPMGbAbAnxHylZAYxQ9KE6ixZgt_MQzg_WxDkoOmHtbI84esOdzeTqAfcefKYZlEQeMmUe0qTY_cJw_V3xJIKDNisqDA3pFKxmnBtM5D6KOIBL5VrP6W7IzhLmjiVqZsimYn6z8UTYf5RYVxFuzVsIDq8yZkNO-a"/>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-24 pb-32 px-6 max-w-2xl mx-auto w-full">
+<!-- Header Section -->
+<div class="mb-10">
+<span class="text-primary font-bold text-sm tracking-widest uppercase mb-2 block">Your Schedule</span>
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Bookings</h2>
+<p class="text-on-surface-variant leading-relaxed">Manage your upcoming appointments and review past experiences with the concierge.</p>
+</div>
+<!-- Segmented Control Tabs -->
+<div class="bg-surface-container p-1.5 rounded-xl flex mb-8">
+<button class="flex-1 py-3 px-4 rounded-lg bg-surface-container-lowest text-primary font-bold shadow-sm transition-all duration-200">
+                Upcoming
+            </button>
+<button class="flex-1 py-3 px-4 rounded-lg text-on-surface-variant font-medium hover:text-on-surface transition-all duration-200">
+                Past
+            </button>
+</div>
+<!-- Booking Cards List -->
+<div class="space-y-6">
+<!-- Card 1: Confirmed -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-sm border border-outline-variant/10 relative overflow-hidden group">
+<div class="flex justify-between items-start mb-6">
+<div class="flex gap-4">
+<div class="w-16 h-16 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="spa">spa</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">Deep Tissue Therapy</h3>
+<p class="text-on-surface-variant text-sm">Zenith Wellness Spa</p>
+</div>
+</div>
+<div class="bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Confirmed
+                    </div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-1">Date</span>
+<span class="text-on-surface font-semibold">Oct 24, 2023</span>
+</div>
+<div class="bg-surface-container p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-1">Time</span>
+<span class="text-on-surface font-semibold">14:30 PM</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 py-4 bg-surface-container-highest text-primary font-bold rounded-xl active:scale-[0.98] transition-transform">
+                        Reschedule
+                    </button>
+<button class="flex-1 py-4 text-error font-bold rounded-xl hover:bg-error/5 active:scale-[0.98] transition-transform">
+                        Cancel
+                    </button>
+</div>
+</div>
+<!-- Card 2: Pending -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-sm border border-outline-variant/10 relative overflow-hidden">
+<div class="flex justify-between items-start mb-6">
+<div class="flex gap-4">
+<div class="w-16 h-16 rounded-lg bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="restaurant">restaurant</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">Tasting Menu for Two</h3>
+<p class="text-on-surface-variant text-sm">Indigo Dining Room</p>
+</div>
+</div>
+<div class="bg-outline-variant/30 text-on-surface-variant px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Pending
+                    </div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-1">Date</span>
+<span class="text-on-surface font-semibold">Oct 28, 2023</span>
+</div>
+<div class="bg-surface-container p-4 rounded-lg">
+<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-1">Time</span>
+<span class="text-on-surface font-semibold">20:00 PM</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 py-4 bg-surface-container-highest text-primary font-bold rounded-xl active:scale-[0.98] transition-transform">
+                        Modify
+                    </button>
+<button class="flex-1 py-4 text-error font-bold rounded-xl hover:bg-error/5 active:scale-[0.98] transition-transform">
+                        Cancel
+                    </button>
+</div>
+</div>
+<!-- Empty Past Section Teaser -->
+<div class="mt-12 p-8 border-2 border-dashed border-outline-variant/30 rounded-xl flex flex-col items-center justify-center text-center opacity-60">
+<span class="material-symbols-outlined text-4xl mb-4 text-on-surface-variant" data-icon="history">history</span>
+<h4 class="text-lg font-bold text-on-surface">Previous bookings will appear here</h4>
+<p class="text-sm text-on-surface-variant max-w-[240px]">Once your appointments are completed, you can re-book them with a single tap.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(27,27,36,0.06)] rounded-t-[3rem]">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="search">search</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-indigo-600 text-white rounded-full p-3 transition-all duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_today" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Bookings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="favorite">favorite</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Profile</span>
+</a>
+</nav>
+</body></html>

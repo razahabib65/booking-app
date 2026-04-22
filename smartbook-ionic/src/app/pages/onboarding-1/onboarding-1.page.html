@@ -1,0 +1,81 @@
+<ion-content [fullscreen]="true" class="bg-background text-on-surface min-h-screen flex flex-col items-center overflow-hidden">
+  <main class="relative w-full max-w-md h-screen flex flex-col px-8 pt-12 pb-24 overflow-hidden">
+    <div class="relative flex-1 w-full flex items-center justify-center">
+      <div class="absolute top-0 -left-12 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-12 -right-8 w-48 h-48 bg-secondary-container/20 rounded-full blur-3xl"></div>
+
+      <div class="relative w-full aspect-square z-10 flex items-center justify-center">
+        <div class="relative w-4/5 aspect-[4/5] bg-surface-container-lowest rounded-lg shadow-2xl shadow-on-surface/5 flex flex-col overflow-hidden">
+          <img class="w-full h-1/2 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGGomUJ37Rcp5VhLZUARC7YKVROY-NkJkUmebw5G0Di1ENGzP1rJYIgFkGozvZzuMJzoLogmppdIuUlsvCO0kWGva1Bo7GDcNqxVgGHiBW_K0LA3QhULxTKNafWARbGCEoBJMO7pn0Ebu8ImgP8TyAzo-Oss_lHSlDZb-L8zbgot1Oumvzcwur9-FsB7LV2Aw2cl96jNveVa99GHPhOcIQmUS8QE3Q4AovLRaivNdj_tGC80PaWhec8Q4SO1o_JXimhUUyCNRwuLz5"/>
+          <div class="p-6 space-y-4">
+            <div class="h-4 w-3/4 bg-surface-container-high rounded-full"></div>
+            <div class="h-4 w-1/2 bg-surface-container rounded-full"></div>
+            <div class="flex gap-2 pt-4">
+              <div class="h-8 w-8 rounded-full bg-primary-container/20"></div>
+              <div class="h-8 w-8 rounded-full bg-primary-container/20"></div>
+              <div class="h-8 w-8 rounded-full bg-primary-container/20"></div>
+            </div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 bg-white/80 backdrop-blur-xl p-4 rounded-xl shadow-xl flex items-center gap-3 border border-outline-variant/10">
+            <div class="p-2 bg-primary rounded-full text-white">
+              <span class="material-symbols-outlined text-lg">search</span>
+            </div>
+            <div class="flex-1 space-y-1">
+              <div class="h-2 w-12 bg-primary/20 rounded-full"></div>
+              <div class="h-3 w-24 bg-on-surface/10 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute top-10 right-0 w-24 h-24 bg-surface-container-highest rounded-xl -rotate-12 shadow-lg flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+        </div>
+        <div class="absolute bottom-10 -left-4 w-20 h-20 bg-secondary-container/40 backdrop-blur-md rounded-full rotate-6 shadow-md flex items-center justify-center">
+          <span class="material-symbols-outlined text-secondary text-3xl">event_available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-20 space-y-6 mt-8">
+      <div class="space-y-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface leading-[1.1]">
+          Find your service <span class="text-primary italic">easily</span>
+        </h1>
+        <p class="text-on-surface-variant text-lg font-medium leading-relaxed max-w-[90%]">
+          Discover the best local professionals for all your needs.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-4 pt-4">
+        <a class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary py-5 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 active:scale-95 transition-all flex items-center justify-center gap-2" routerLink="/onboarding-2">
+          Next
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+        <a class="w-full text-on-surface-variant py-4 font-semibold text-sm hover:text-primary transition-colors text-center" routerLink="/login">
+          Skip for now
+        </a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-10 left-0 w-full px-8 flex justify-between items-center">
+      <div class="flex gap-2">
+        <div class="h-2.5 w-8 rounded-full bg-primary transition-all"></div>
+        <div class="h-2.5 w-2.5 rounded-full bg-surface-container-highest"></div>
+        <div class="h-2.5 w-2.5 rounded-full bg-surface-container-highest"></div>
+      </div>
+      <span class="text-xs font-bold uppercase tracking-widest text-on-surface/20 font-headline">SmartBook</span>
+    </div>
+  </main>
+
+  <header class="fixed top-0 left-0 w-full px-8 py-6 z-50 flex justify-between items-center pointer-events-none">
+    <div class="flex items-center gap-1.5 pointer-events-auto">
+      <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+        <span class="material-symbols-outlined text-white text-xl" style="font-variation-settings: 'FILL' 1;">book</span>
+      </div>
+      <span class="font-black text-xl tracking-tighter text-on-surface">SmartBook</span>
+    </div>
+    <div class="pointer-events-auto">
+      <button class="text-sm font-bold text-primary px-4 py-2 bg-primary/5 rounded-full" type="button">Support</button>
+    </div>
+  </header>
+</ion-content>

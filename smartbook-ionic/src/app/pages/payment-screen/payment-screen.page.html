@@ -1,0 +1,155 @@
+<ion-content [fullscreen]="true" class="bg-background text-on-surface min-h-screen pb-32">
+  <header class="fixed top-0 left-0 w-full px-6 py-4 flex justify-between items-center bg-indigo-50/80 backdrop-blur-xl z-50 shadow-sm shadow-indigo-100/20">
+    <div class="flex items-center gap-4">
+      <a class="p-2 hover:bg-indigo-100/50 transition-colors active:scale-95 duration-200 rounded-full" routerLink="/booking-screen">
+        <span class="material-symbols-outlined text-indigo-600">arrow_back</span>
+      </a>
+      <h1 class="text-xl font-black text-indigo-700 tracking-tighter">SmartBook</h1>
+    </div>
+    <div class="flex items-center">
+      <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+        <img alt="User Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaJ53v3JlW6q2VQefzk6CRmHVj64mKw58nkkHmThb7ddSw-6_C8h6BUheUMAtai5x7wC6eLQq2JB8fCLZ49yj9VDohOpWrpe47SKD_bknFgkQR9rpu20WEbJx6ysTBvfK3sxB8d7jW0GlvqW3zIXVwHMpeRAFpHuyizz6FvkQAb7pOV5GSjuvVUc5EGjlAHA-1FGd4m0EBmcVVEaZM5U8IrNCaIRl2i76kK8DeWK1zWNxUgq0n7hLui0wt147PXzhQo624DhpRPe0k"/>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24 px-6 max-w-2xl mx-auto">
+    <section class="mb-10 text-center md:text-left">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high text-on-primary-fixed-variant font-medium text-xs mb-4">
+        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">lock</span>
+        SECURE CHECKOUT
+      </div>
+      <h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Review &amp; Pay</h2>
+      <p class="text-on-surface-variant">Confirm your details and choose your preferred payment method.</p>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div class="md:col-span-7 flex flex-col gap-6">
+        <div class="bg-surface-container-low p-8 rounded-lg">
+          <h3 class="text-lg font-bold mb-6 flex items-center gap-2">Payment Method</h3>
+
+          <div class="space-y-4">
+            <label class="group relative flex items-center justify-between p-5 bg-surface-container-lowest border-2 border-primary rounded-lg cursor-pointer transition-all">
+              <input checked class="hidden" name="payment" type="radio" />
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary">credit_card</span>
+                </div>
+                <div>
+                  <p class="font-bold text-on-surface">Credit Card</p>
+                  <p class="text-xs text-on-surface-variant">Pay with Visa or Mastercard</p>
+                </div>
+              </div>
+              <div class="w-6 h-6 rounded-full border-2 border-primary flex items-center justify-center">
+                <div class="w-3 h-3 rounded-full bg-primary"></div>
+              </div>
+            </label>
+
+            <label class="group relative flex items-center justify-between p-5 bg-surface-container-lowest border-2 border-transparent hover:border-outline-variant/30 rounded-lg cursor-pointer transition-all">
+              <input class="hidden" name="payment" type="radio" />
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-on-surface/5 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-on-surface">ios</span>
+                </div>
+                <div>
+                  <p class="font-bold text-on-surface">Apple Pay</p>
+                  <p class="text-xs text-on-surface-variant">Fast and secure with Touch ID</p>
+                </div>
+              </div>
+              <div class="w-6 h-6 rounded-full border-2 border-outline-variant"></div>
+            </label>
+
+            <label class="group relative flex items-center justify-between p-5 bg-surface-container-lowest border-2 border-transparent hover:border-outline-variant/30 rounded-lg cursor-pointer transition-all">
+              <input class="hidden" name="payment" type="radio" />
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-on-surface/5 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-on-surface">payments</span>
+                </div>
+                <div>
+                  <p class="font-bold text-on-surface">Cash at Venue</p>
+                  <p class="text-xs text-on-surface-variant">Pay when you arrive</p>
+                </div>
+              </div>
+              <div class="w-6 h-6 rounded-full border-2 border-outline-variant"></div>
+            </label>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-outline-variant/10 space-y-4">
+            <div class="bg-surface-container p-4 rounded-md">
+              <label class="block text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">Card Number</label>
+              <input class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface font-medium placeholder:text-outline-variant" placeholder="**** **** **** 4242" type="text" />
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-surface-container p-4 rounded-md">
+                <label class="block text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">Expiry Date</label>
+                <input class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface font-medium placeholder:text-outline-variant" placeholder="MM / YY" type="text" />
+              </div>
+              <div class="bg-surface-container p-4 rounded-md">
+                <label class="block text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">CVV</label>
+                <input class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface font-medium placeholder:text-outline-variant" placeholder="***" type="password" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-5">
+        <div class="bg-surface-container-high p-8 rounded-lg sticky top-28">
+          <h3 class="text-lg font-bold mb-6">Booking Summary</h3>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="w-16 h-16 rounded-xl bg-white overflow-hidden shadow-sm flex-shrink-0">
+                <img alt="Service" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCScUMVEy5N11IL-6QrO93cEKJanCmKCqRI9M9ad7KTory2cJxjEo5YyaBzMzB9t7iwbLXVwV53C66kS6qN7eUewGxUwhUsDlMAWEM_aCtjEaQPujQMMj2B4Vf0yDqWnUMWNHfv-nnd0tonmVDb8MouMkseKd6lkC3zVJGckhYu1iT4zdSpMgcXzVrdV3ROP4GTw6oi0rBLB-xHSighCBw5bCPMLudp1hMCRze-3JxOwaQkgU0cLVHB-7s88jMDsBqXe2r9yDi95CIo" />
+              </div>
+              <div>
+                <p class="font-bold text-on-surface">Luxury Spa Package</p>
+                <p class="text-xs text-on-surface-variant">Friday, 24 Nov • 14:00</p>
+              </div>
+            </div>
+
+            <div class="space-y-3 pt-6 border-t border-outline-variant/20">
+              <div class="flex justify-between text-sm">
+                <span class="text-on-surface-variant">Service Fee</span>
+                <span class="text-on-surface font-medium">$120.00</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-on-surface-variant">Booking Charge</span>
+                <span class="text-on-surface font-medium">$5.50</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-on-surface-variant">Tax (10%)</span>
+                <span class="text-on-surface font-medium">$12.55</span>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-outline-variant/20 flex justify-between items-end">
+              <div>
+                <p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Total Amount</p>
+                <p class="text-3xl font-black text-primary tracking-tighter">$138.05</p>
+              </div>
+              <span class="text-[10px] font-bold text-primary bg-primary/10 px-2 py-1 rounded-full uppercase tracking-widest mb-1">USD</span>
+            </div>
+
+            <div class="bg-white/50 p-4 rounded-xl mt-4">
+              <div class="flex gap-3">
+                <span class="material-symbols-outlined text-primary text-sm">verified_user</span>
+                <p class="text-[11px] text-on-surface-variant leading-relaxed">Your payment is encrypted with 256-bit SSL technology. Free cancellation up to 24h before.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="fixed bottom-0 left-0 w-full z-50 p-6 bg-white/90 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(27,27,36,0.06)] flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="hidden md:block">
+      <p class="text-xs text-on-surface-variant">Reviewing as <span class="font-bold">John Doe</span></p>
+      <p class="text-[10px] text-outline uppercase font-bold tracking-widest">john.doe@example.com</p>
+    </div>
+    <a class="w-full md:w-auto min-w-[280px] bg-gradient-to-r from-primary to-primary-container text-on-primary py-5 px-10 rounded-xl font-bold flex items-center justify-center gap-3 active:scale-95 transition-all duration-300 shadow-xl shadow-primary/20" routerLink="/home-screen">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">lock</span>
+      Pay Now • $138.05
+    </a>
+  </footer>
+</ion-content>

@@ -1,0 +1,128 @@
+<ion-content [fullscreen]="true" class="bg-background text-on-surface min-h-screen flex flex-col md:flex-row overflow-x-hidden">
+  <aside class="hidden lg:flex lg:w-1/2 relative bg-primary-container overflow-hidden items-center justify-center p-16">
+    <div class="absolute inset-0 z-0">
+      <img class="w-full h-full object-cover opacity-60 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL2q16c98TYxqkSLkd19jpF-O1Scr8lGO63b9UblJP44DoSiE-rpjBCApx9YYR-bKdUNJD3tsOF4IpfuWPRfIHydIfZkRtL8AnD0apQGn9hjCOfYg8dey0iNpNuc1lEVMkrH3T4oOmZxcSXI4w6ZszEPNhBFs7dodC8b_csBW0_KeJX2gVIIRW4sJ1wQ6G0xH0Pm1C4sbB9dTy_q7ZSO9d7rG4Q10eaECqvjhVK_RV71Xv-elrHG2EY8iBB3dc2UPnKXgla53SZFl8"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-lg">
+      <div class="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/10">
+        <span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">colors_spark</span>
+        <span class="text-white font-label text-xs font-semibold tracking-widest uppercase">SmartBook Premium</span>
+      </div>
+      <h2 class="text-white text-6xl font-headline font-extrabold tracking-tighter mb-6 leading-none">
+        Elevate your <br />daily routine.
+      </h2>
+      <p class="text-on-primary-container text-lg font-body leading-relaxed max-w-md opacity-90">
+        Join a community of professionals who value time as their most precious asset. Seamless bookings, personalized experiences.
+      </p>
+    </div>
+  </aside>
+
+  <main class="flex-1 flex flex-col items-center justify-center px-6 py-12 md:px-12 lg:px-24">
+    <div class="lg:hidden w-full mb-12 flex justify-center">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+          <span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+        </div>
+        <span class="font-headline font-black text-2xl tracking-tighter text-primary">SmartBook</span>
+      </div>
+    </div>
+
+    <div class="w-full max-w-md">
+      <header class="mb-10 text-left">
+        <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tight mb-3">Create Account</h1>
+        <p class="text-on-surface-variant font-body">
+          Already have an account?
+          <a class="text-primary font-semibold hover:underline transition-all" routerLink="/login">Log in here</a>
+        </p>
+      </header>
+
+      <form class="space-y-5" (submit)="$event.preventDefault()">
+        <div class="space-y-2">
+          <label class="block text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest ml-1" for="name">Full Name</label>
+          <div class="relative group">
+            <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[20px]">person</span>
+            </div>
+            <input id="name" class="w-full bg-surface-container border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none placeholder:text-outline-variant font-body" placeholder="Alexander Pierce" type="text"/>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="block text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest ml-1" for="email">Email Address</label>
+          <div class="relative group">
+            <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[20px]">mail</span>
+            </div>
+            <input id="email" class="w-full bg-surface-container border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none placeholder:text-outline-variant font-body" placeholder="alex@concierge.com" type="email"/>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="block text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest ml-1" for="phone">Phone Number</label>
+          <div class="relative group">
+            <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[20px]">smartphone</span>
+            </div>
+            <input id="phone" class="w-full bg-surface-container border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none placeholder:text-outline-variant font-body" placeholder="+1 (555) 000-0000" type="tel"/>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="block text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest ml-1" for="password">Secure Password</label>
+          <div class="relative group">
+            <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[20px]">lock</span>
+            </div>
+            <input id="password" class="w-full bg-surface-container border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none placeholder:text-outline-variant font-body" placeholder="••••••••••••" type="password"/>
+            <button class="absolute inset-y-0 right-4 flex items-center text-outline hover:text-primary transition-colors" type="button">
+              <span class="material-symbols-outlined text-[20px]">visibility</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 pt-2">
+          <div class="flex items-center h-5">
+            <input class="w-5 h-5 rounded-md border-outline-variant text-primary focus:ring-primary transition-colors cursor-pointer" id="terms" type="checkbox" />
+          </div>
+          <label class="text-sm font-body text-on-surface-variant leading-tight cursor-pointer" for="terms">
+            I agree to the <a class="text-primary font-medium hover:underline" href="#">Terms of Service</a> and <a class="text-primary font-medium hover:underline" href="#">Privacy Policy</a>.
+          </label>
+        </div>
+
+        <div class="pt-6">
+          <button class="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 px-8 rounded-xl font-headline font-bold text-lg shadow-xl shadow-primary/20 active:scale-[0.98] transition-all hover:shadow-2xl hover:shadow-primary/30" type="submit">
+            Sign Up
+          </button>
+        </div>
+      </form>
+
+      <div class="mt-12">
+        <div class="relative flex items-center justify-center mb-8">
+          <div class="flex-grow border-t border-surface-container-highest"></div>
+          <span class="px-4 text-[10px] font-label font-bold uppercase tracking-widest text-outline">Or continue with</span>
+          <div class="flex-grow border-t border-surface-container-highest"></div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <button class="flex items-center justify-center gap-3 bg-surface-container-low hover:bg-surface-container-high py-4 rounded-xl transition-all group" type="button">
+            <span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center text-[10px] font-bold">G</span>
+            <span class="font-body text-sm font-semibold text-on-surface">Google</span>
+          </button>
+          <button class="flex items-center justify-center gap-3 bg-surface-container-low hover:bg-surface-container-high py-4 rounded-xl transition-all group" type="button">
+            <span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center text-[10px] font-bold">A</span>
+            <span class="font-body text-sm font-semibold text-on-surface">Apple</span>
+          </button>
+        </div>
+      </div>
+
+      <footer class="mt-16 text-center lg:text-left w-full max-w-md">
+        <p class="text-xs font-label text-outline uppercase tracking-widest">Protected by reCAPTCHA and SmartBook Security Protocol.</p>
+      </footer>
+    </div>
+  </main>
+
+  <div class="fixed bottom-8 right-8 hidden xl:block pointer-events-none opacity-20">
+    <span class="font-headline font-black text-9xl tracking-tighter text-surface-container-highest select-none">SB</span>
+  </div>
+</ion-content>

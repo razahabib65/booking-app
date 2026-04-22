@@ -1,0 +1,124 @@
+<ion-content [fullscreen]="true" class="bg-background text-on-surface">
+  <header class="fixed top-0 left-0 w-full px-6 py-4 flex justify-between items-center bg-indigo-50/80 dark:bg-slate-950/80 backdrop-blur-xl z-50 shadow-sm shadow-indigo-100/20 dark:shadow-none">
+    <div class="flex items-center gap-4">
+      <button class="material-symbols-outlined text-indigo-600 dark:text-indigo-400 p-2 hover:bg-indigo-100/50 dark:hover:bg-slate-800 transition-colors active:scale-95 duration-200" type="button">menu</button>
+      <h1 class="text-xl font-black text-indigo-700 dark:text-indigo-300 tracking-tighter font-['Manrope']">SmartBook</h1>
+    </div>
+    <div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high ring-2 ring-primary/10">
+      <img alt="User profile picture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8eQB3b1UZD8yDUNnXSC5VNLyKFd2RBxHY85OVgKkxJy6vJ6u_ZjkCV1kTdVgZMreJiT3FHaPATAjv4HxALjr7Gbl8W475DrqIu0PsAV8VX9DeUsEZIJjD1yCBQWjzcjMBZUXYVUk_PgUe16izEiH_Yd5JlZOnHYU7En33K5PYoR-N_X0qLp7w0KSbt7ru0FBnxMsmT2vtst0pOqRilR2e5KFJNwEp5fNmF3gabSNDSGXvTO_6UTsgUmFNTpzVFSP2DM22RC_JgEX-" />
+    </div>
+  </header>
+
+  <main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+    <section class="flex flex-col items-center mb-12">
+      <div class="relative mb-6">
+        <div class="w-32 h-32 rounded-xl overflow-hidden shadow-2xl shadow-indigo-200/50">
+          <img alt="Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVZMvEmBQ7f9S9jEysxXBYnpHCjd50gbNwzfo89YzcpF4PyFbhDZJXfVmwxdKDaY_0gsahWPI5G2oR3SeDy-KZykdBnyqLDWnHZbHCXG5SwevVC1HXU7qm_1gNs0R2LWgzXbq9n-ml7Lmy8krFroC5kRRMuqNZ8xsn_Cutctdy3XLo-13L4YoFWD7ljW1QFKYYRNWvuvYyWLkMwnuvv3ARjnchm4FQu1Bc0XY7x6OGhiF4K6vR3YBNccnQpKKqNuZeUToPgDiUBBGv" />
+        </div>
+        <div class="absolute -bottom-2 -right-2 bg-primary p-2 rounded-full text-white shadow-lg">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">edit</span>
+        </div>
+      </div>
+
+      <div class="text-center mb-6">
+        <h2 class="text-3xl font-extrabold text-on-surface font-headline tracking-tight">Elena Rodriguez</h2>
+        <p class="text-on-surface-variant font-medium">elena.rodriguez@concierge.com</p>
+      </div>
+
+      <button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold tracking-tight shadow-lg shadow-indigo-200/40 hover:opacity-90 active:scale-95 transition-all" type="button">
+        Edit Profile
+      </button>
+    </section>
+
+    <div class="space-y-4">
+      <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant/60 ml-2 mb-4">Account Settings</h3>
+
+      <div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container transition-colors">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined">dark_mode</span>
+          </div>
+          <div>
+            <span class="font-bold text-on-surface block">Dark Mode</span>
+            <span class="text-sm text-on-surface-variant">Switch to night theme</span>
+          </div>
+        </div>
+        <div class="w-12 h-6 bg-surface-container-highest rounded-full relative p-1 cursor-pointer">
+          <div class="w-4 h-4 bg-primary rounded-full absolute left-1"></div>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container transition-colors cursor-pointer">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined">notifications</span>
+          </div>
+          <div>
+            <span class="font-bold text-on-surface block">Notifications</span>
+            <span class="text-sm text-on-surface-variant">Manage your alerts</span>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+      </div>
+
+      <div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container transition-colors cursor-pointer">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined">credit_card</span>
+          </div>
+          <div>
+            <span class="font-bold text-on-surface block">Payment Methods</span>
+            <span class="text-sm text-on-surface-variant">Default: Visa ending in 4242</span>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+      </div>
+
+      <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant/60 ml-2 mt-10 mb-4">Support &amp; Legal</h3>
+
+      <div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container transition-colors cursor-pointer">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined">policy</span>
+          </div>
+          <div>
+            <span class="font-bold text-on-surface block">Privacy Policy</span>
+            <span class="text-sm text-on-surface-variant">How we handle your data</span>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+      </div>
+
+      <div class="bg-red-50/50 dark:bg-red-950/20 p-6 rounded-lg flex items-center justify-between group hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors cursor-pointer mt-4">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-white dark:bg-red-900/20 flex items-center justify-center text-red-600">
+            <span class="material-symbols-outlined">logout</span>
+          </div>
+          <div>
+            <span class="font-bold text-red-600 block">Logout</span>
+            <span class="text-sm text-red-600/70">Sign out of your account</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(27,27,36,0.06)] rounded-t-[3rem]">
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" routerLink="/home-screen">
+      <span class="material-symbols-outlined">search</span>
+      <span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Explore</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" routerLink="/booking-history">
+      <span class="material-symbols-outlined">calendar_today</span>
+      <span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Bookings</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" routerLink="/service-listing">
+      <span class="material-symbols-outlined">favorite</span>
+      <span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Saved</span>
+    </a>
+    <a class="flex flex-col items-center justify-center bg-indigo-600 text-white rounded-full p-3 transition-all duration-300 active:scale-90" routerLink="/profile-screen">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+      <span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+    </a>
+  </nav>
+</ion-content>

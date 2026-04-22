@@ -1,0 +1,86 @@
+<ion-content [fullscreen]="true" class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+  <main class="min-h-screen flex flex-col relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-[100px]"></div>
+    <div class="absolute top-1/4 -left-12 w-48 h-48 bg-secondary-container/20 rounded-full blur-[60px]"></div>
+
+    <section class="flex-1 flex flex-col justify-center items-center px-6 pt-12 relative z-10">
+      <div class="relative w-full max-w-md aspect-square flex items-center justify-center">
+        <div class="w-72 h-96 bg-surface-container-low rounded-xl shadow-[0_40px_60px_rgba(27,27,36,0.06)] relative flex flex-col p-6 overflow-hidden">
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+              <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-white">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">notifications</span>
+              </div>
+              <div class="flex-1">
+                <div class="h-2 w-24 bg-surface-container-high rounded-full mb-2"></div>
+                <div class="h-2 w-16 bg-surface-container rounded-full"></div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-surface-container-lowest/50 p-4 rounded-lg">
+              <div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined">event_available</span>
+              </div>
+              <div class="flex-1">
+                <div class="h-2 w-20 bg-surface-container-high rounded-full mb-2"></div>
+                <div class="h-2 w-12 bg-surface-container rounded-full"></div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-surface-container-lowest/20 p-4 rounded-lg">
+              <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-outline">
+                <span class="material-symbols-outlined">history</span>
+              </div>
+              <div class="flex-1">
+                <div class="h-2 w-28 bg-surface-container-high rounded-full mb-2"></div>
+                <div class="h-2 w-14 bg-surface-container rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute bottom-10 -right-4 bg-white p-4 rounded-lg shadow-xl flex items-center gap-3 border border-outline-variant/10">
+            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white scale-90">
+              <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Confirmed</span>
+          </div>
+
+          <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl"></div>
+        </div>
+
+        <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-40">
+          <img class="w-full h-full object-contain filter blur-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjrqk77gdHoBR8xP6_M1wj65u2VAYPYvFXFn163W78g4z_vbJ2EhH378lqCEdII0_16CFHWHkM8nqtDfENelJqFnH0UiVIJTv62cukV_x3kgn4ORPYQ2jlRtUHEqQt-fe4tf25UU--MNfuycd_JD5xNjHYk0Us9B5gvQPbn00ILff5R9ndNiQxshnqcaLJFZ0MVZKopH7_JgJltujmNnuG8lGmCOEkcs5Uk7t7ElZRN_ajwyDWQrVV_YR5Bs2fbGHoG-1GzkVzK-dZ"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-container-lowest/80 backdrop-blur-xl rounded-t-[3rem] px-8 pt-12 pb-16 flex flex-col items-center text-center shadow-[0_-20px_50px_rgba(53,37,205,0.04)]">
+      <div class="flex gap-2 mb-10">
+        <div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+        <div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+        <div class="w-8 h-2 rounded-full bg-primary"></div>
+      </div>
+
+      <h1 class="font-headline text-4xl font-extrabold text-on-surface tracking-tight mb-4 max-w-xs">
+        Track your bookings anytime
+      </h1>
+
+      <p class="font-body text-on-surface-variant text-base leading-relaxed mb-12 max-w-sm">
+        Manage your appointments and get real-time reminders.
+      </p>
+
+      <a class="primary-gradient w-full py-5 rounded-xl text-on-primary font-bold text-lg shadow-lg shadow-primary/20 active:scale-95 transition-transform duration-200 flex items-center justify-center gap-3" routerLink="/login">
+        Get Started
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+
+      <a class="mt-6 text-on-surface-variant font-semibold text-sm tracking-wide uppercase hover:text-primary transition-colors" routerLink="/onboarding-2">
+        Back
+      </a>
+    </section>
+  </main>
+
+  <div class="fixed bottom-0 left-0 w-full h-1 bg-surface-container-low">
+    <div class="h-full bg-primary w-full origin-left transition-transform duration-1000"></div>
+  </div>
+</ion-content>

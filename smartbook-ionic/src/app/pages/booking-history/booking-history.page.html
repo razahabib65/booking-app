@@ -1,0 +1,117 @@
+<ion-content [fullscreen]="true" class="bg-background text-on-surface min-h-screen flex flex-col">
+  <header class="fixed top-0 left-0 w-full px-6 py-4 flex justify-between items-center bg-indigo-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-indigo-100/20 dark:shadow-none z-50">
+    <div class="flex items-center gap-3">
+      <button class="p-2 rounded-full hover:bg-indigo-100/50 dark:hover:bg-slate-800 transition-colors active:scale-95 duration-200 text-indigo-600 dark:text-indigo-400" type="button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <h1 class="text-xl font-black text-indigo-700 dark:text-indigo-300 tracking-tighter">SmartBook</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+        <img alt="User profile picture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGCiRud9AIZmkYGwceWlLd1y-fU5NJlqEslN7bDBO7sZvK14Pl-j41Cqi7xx5jYu2flLf93UgVMuDRqKdAMqehuyyKLd_beuccePgwgHec-F6biPMGbAbAnxHylZAYxQ9KE6ixZgt_MQzg_WxDkoOmHtbI84esOdzeTqAfcefKYZlEQeMmUe0qTY_cJw_V3xJIKDNisqDA3pFKxmnBtM5D6KOIBL5VrP6W7IzhLmjiVqZsimYn6z8UTYf5RYVxFuzVsIDq8yZkNO-a"/>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-24 pb-32 px-6 max-w-2xl mx-auto w-full">
+    <div class="mb-10">
+      <span class="text-primary font-bold text-sm tracking-widest uppercase mb-2 block">Your Schedule</span>
+      <h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Bookings</h2>
+      <p class="text-on-surface-variant leading-relaxed">Manage your upcoming appointments and review past experiences with the concierge.</p>
+    </div>
+
+    <div class="bg-surface-container p-1.5 rounded-xl flex mb-8">
+      <button class="flex-1 py-3 px-4 rounded-lg bg-surface-container-lowest text-primary font-bold shadow-sm transition-all duration-200" type="button">Upcoming</button>
+      <button class="flex-1 py-3 px-4 rounded-lg text-on-surface-variant font-medium hover:text-on-surface transition-all duration-200" type="button">Past</button>
+    </div>
+
+    <div class="space-y-6">
+      <div class="bg-surface-container-low rounded-xl p-6 shadow-sm border border-outline-variant/10 relative overflow-hidden group">
+        <div class="flex justify-between items-start mb-6">
+          <div class="flex gap-4">
+            <div class="w-16 h-16 rounded-lg bg-primary-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">spa</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-on-surface">Deep Tissue Therapy</h3>
+              <p class="text-on-surface-variant text-sm">Zenith Wellness Spa</p>
+            </div>
+          </div>
+          <div class="bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Confirmed</div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div class="bg-surface-container p-4 rounded-lg">
+            <span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-1">Date</span>
+            <span class="text-on-surface font-semibold">Oct 24, 2023</span>
+          </div>
+          <div class="bg-surface-container p-4 rounded-lg">
+            <span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-1">Time</span>
+            <span class="text-on-surface font-semibold">14:30 PM</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <a class="flex-1 py-4 bg-surface-container-highest text-primary font-bold rounded-xl active:scale-[0.98] transition-transform text-center" routerLink="/booking-screen">Reschedule</a>
+          <button class="flex-1 py-4 text-error font-bold rounded-xl hover:bg-error/5 active:scale-[0.98] transition-transform" type="button">Cancel</button>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-low rounded-xl p-6 shadow-sm border border-outline-variant/10 relative overflow-hidden">
+        <div class="flex justify-between items-start mb-6">
+          <div class="flex gap-4">
+            <div class="w-16 h-16 rounded-lg bg-secondary-container flex items-center justify-center">
+              <span class="material-symbols-outlined text-on-secondary-container text-3xl">restaurant</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-on-surface">Tasting Menu for Two</h3>
+              <p class="text-on-surface-variant text-sm">Indigo Dining Room</p>
+            </div>
+          </div>
+          <div class="bg-outline-variant/30 text-on-surface-variant px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Pending</div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div class="bg-surface-container p-4 rounded-lg">
+            <span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-1">Date</span>
+            <span class="text-on-surface font-semibold">Oct 28, 2023</span>
+          </div>
+          <div class="bg-surface-container p-4 rounded-lg">
+            <span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-1">Time</span>
+            <span class="text-on-surface font-semibold">20:00 PM</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <a class="flex-1 py-4 bg-surface-container-highest text-primary font-bold rounded-xl active:scale-[0.98] transition-transform text-center" routerLink="/booking-screen">Modify</a>
+          <button class="flex-1 py-4 text-error font-bold rounded-xl hover:bg-error/5 active:scale-[0.98] transition-transform" type="button">Cancel</button>
+        </div>
+      </div>
+
+      <div class="mt-12 p-8 border-2 border-dashed border-outline-variant/30 rounded-xl flex flex-col items-center justify-center text-center opacity-60">
+        <span class="material-symbols-outlined text-4xl mb-4 text-on-surface-variant">history</span>
+        <h4 class="text-lg font-bold text-on-surface">Previous bookings will appear here</h4>
+        <p class="text-sm text-on-surface-variant max-w-[240px]">Once your appointments are completed, you can re-book them with a single tap.</p>
+      </div>
+    </div>
+  </main>
+
+  <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(27,27,36,0.06)] rounded-t-[3rem]">
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" routerLink="/home-screen">
+      <span class="material-symbols-outlined mb-1">search</span>
+      <span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Explore</span>
+    </a>
+    <a class="flex flex-col items-center justify-center bg-indigo-600 text-white rounded-full p-3 transition-all duration-300 active:scale-90" routerLink="/booking-history">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+      <span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase mt-1">Bookings</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" routerLink="/service-listing">
+      <span class="material-symbols-outlined mb-1">favorite</span>
+      <span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Saved</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-indigo-500 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-200" routerLink="/profile-screen">
+      <span class="material-symbols-outlined mb-1">person</span>
+      <span class="font-['Inter'] text-[11px] font-semibold tracking-wide uppercase">Profile</span>
+    </a>
+  </nav>
+</ion-content>

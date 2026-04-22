@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Account | SmartBook</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#eae6f4",
+                      "inverse-on-surface": "#f3effc",
+                      "on-error-container": "#93000a",
+                      "background": "#fcf8ff",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#454386",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#c3c0ff",
+                      "surface-bright": "#fcf8ff",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed-dim": "#c3c0ff",
+                      "secondary-fixed": "#e2dfff",
+                      "on-error": "#ffffff",
+                      "on-primary-fixed": "#0f0069",
+                      "error-container": "#ffdad6",
+                      "tertiary-container": "#a44100",
+                      "primary-container": "#4f46e5",
+                      "surface-container": "#f0ecf9",
+                      "outline": "#777587",
+                      "secondary-container": "#b6b4ff",
+                      "on-background": "#1b1b24",
+                      "tertiary-fixed": "#ffdbcc",
+                      "on-surface": "#1b1b24",
+                      "surface-tint": "#4d44e3",
+                      "outline-variant": "#c7c4d8",
+                      "on-secondary-fixed-variant": "#413f82",
+                      "on-tertiary-fixed-variant": "#7b2f00",
+                      "on-primary-fixed-variant": "#3323cc",
+                      "tertiary": "#7e3000",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#140f54",
+                      "primary-fixed": "#e2dfff",
+                      "surface-container-highest": "#e4e1ee",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#dcd8e5",
+                      "on-primary-container": "#dad7ff",
+                      "surface-container-low": "#f5f2ff",
+                      "tertiary-fixed-dim": "#ffb695",
+                      "primary": "#3525cd",
+                      "surface-variant": "#e4e1ee",
+                      "on-tertiary-fixed": "#351000",
+                      "on-tertiary-container": "#ffd2be",
+                      "on-surface-variant": "#464555",
+                      "inverse-surface": "#302f39",
+                      "surface": "#fcf8ff",
+                      "secondary": "#58579b",
+                      "secondary-fixed-dim": "#c3c0ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom hide scrollbar */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col md:flex-row overflow-x-hidden">
+<!-- Left Column: Branding & Atmosphere (Hidden on Mobile) -->
+<aside class="hidden lg:flex lg:w-1/2 relative bg-primary-container overflow-hidden items-center justify-center p-16">
+<div class="absolute inset-0 z-0">
+<img alt="High-end office lounge with deep indigo velvet chairs and soft ambient lighting" class="w-full h-full object-cover opacity-60 mix-blend-overlay" data-alt="luxury hotel concierge desk with soft warm lighting and elegant dark blue furniture aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL2q16c98TYxqkSLkd19jpF-O1Scr8lGO63b9UblJP44DoSiE-rpjBCApx9YYR-bKdUNJD3tsOF4IpfuWPRfIHydIfZkRtL8AnD0apQGn9hjCOfYg8dey0iNpNuc1lEVMkrH3T4oOmZxcSXI4w6ZszEPNhBFs7dodC8b_csBW0_KeJX2gVIIRW4sJ1wQ6G0xH0Pm1C4sbB9dTy_q7ZSO9d7rG4Q10eaECqvjhVK_RV71Xv-elrHG2EY8iBB3dc2UPnKXgla53SZFl8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-lg">
+<div class="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/10">
+<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">colors_spark</span>
+<span class="text-white font-label text-xs font-semibold tracking-widest uppercase">SmartBook Premium</span>
+</div>
+<h2 class="text-white text-6xl font-headline font-extrabold tracking-tighter mb-6 leading-none">
+                Elevate your <br/>daily routine.
+            </h2>
+<p class="text-on-primary-container text-lg font-body leading-relaxed max-w-md opacity-90">
+                Join a community of professionals who value time as their most precious asset. Seamless bookings, personalized experiences.
+            </p>
+</div>
+</aside>
+<!-- Right Column: Register Form -->
+<main class="flex-1 flex flex-col items-center justify-center px-6 py-12 md:px-12 lg:px-24">
+<!-- Header Brand (Mobile Only) -->
+<div class="lg:hidden w-full mb-12 flex justify-center">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<span class="font-headline font-black text-2xl tracking-tighter text-primary">SmartBook</span>
+</div>
+</div>
+<!-- Form Container -->
+<div class="w-full max-w-md">
+<header class="mb-10 text-left">
+<h1 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tight mb-3">Create Account</h1>
+<p class="text-on-surface-variant font-body">Already have an account? 
+                    <a class="text-primary font-semibold hover:underline transition-all" href="#">Log in here</a>
+</p>
+</header>
+<form class="space-y-5">
+<!-- Name Field -->
+<div class="space-y-2">
+<label class="block text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest ml-1" for="name">Full Name</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<input class="w-full bg-surface-container border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none placeholder:text-outline-variant font-body" id="name" name="name" placeholder="Alexander Pierce" type="text"/>
+</div>
+</div>
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest ml-1" for="email">Email Address</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<input class="w-full bg-surface-container border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none placeholder:text-outline-variant font-body" id="email" name="email" placeholder="alex@concierge.com" type="email"/>
+</div>
+</div>
+<!-- Phone Field -->
+<div class="space-y-2">
+<label class="block text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest ml-1" for="phone">Phone Number</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">smartphone</span>
+</div>
+<input class="w-full bg-surface-container border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none placeholder:text-outline-variant font-body" id="phone" name="phone" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<label class="block text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest ml-1" for="password">Secure Password</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-outline group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<input class="w-full bg-surface-container border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-high transition-all outline-none placeholder:text-outline-variant font-body" id="password" name="password" placeholder="••••••••••••" type="password"/>
+<button class="absolute inset-y-0 right-4 flex items-center text-outline hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Terms & Conditions -->
+<div class="flex items-start gap-3 pt-2">
+<div class="flex items-center h-5">
+<input class="w-5 h-5 rounded-md border-outline-variant text-primary focus:ring-primary transition-colors cursor-pointer" id="terms" type="checkbox"/>
+</div>
+<label class="text-sm font-body text-on-surface-variant leading-tight cursor-pointer" for="terms">
+                        I agree to the <a class="text-primary font-medium hover:underline" href="#">Terms of Service</a> and <a class="text-primary font-medium hover:underline" href="#">Privacy Policy</a>.
+                    </label>
+</div>
+<!-- Sign Up Button -->
+<div class="pt-6">
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-white py-5 px-8 rounded-xl font-headline font-bold text-lg shadow-xl shadow-primary/20 active:scale-[0.98] transition-all hover:shadow-2xl hover:shadow-primary/30" type="submit">
+                        Sign Up
+                    </button>
+</div>
+</form>
+<!-- Social Registration (Editorial Touch) -->
+<div class="mt-12">
+<div class="relative flex items-center justify-center mb-8">
+<div class="flex-grow border-t border-surface-container-highest"></div>
+<span class="px-4 text-[10px] font-label font-bold uppercase tracking-widest text-outline">Or continue with</span>
+<div class="flex-grow border-t border-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-3 bg-surface-container-low hover:bg-surface-container-high py-4 rounded-xl transition-all group">
+<img alt="Google" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYacZ0TbDYaMcYoTmUsZeKMxVCiBf8JhsbL2CellN_e4bWuXJlXnLcxS7T2TtDDYdANILR9qwC9wwNfhqhiY4yMOg2Y4wCbiNiL1OvBefVGHED0Ui9JSykYY1LaqL3Eg6wktFJ2MFoYfpL5wwSpljn5UX_fxepUi9ditjws-VM_gmpaqzygjPAeSoXGl_0HYTJ7qOWaWz0okeQ1s4OxBVuED70iZvitXEDNm19mgbJGUvRI4jQR3RsROsHu_wJiXFYZ0E2-dVvjWmx"/>
+<span class="font-body text-sm font-semibold text-on-surface">Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 bg-surface-container-low hover:bg-surface-container-high py-4 rounded-xl transition-all group">
+<img alt="Apple" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN0QcvXMcBxD_8JRiyeXoaEx0q85oJ8rP_fPKKguLmN-4Q0ZCSczB0GhRna5lEUOkKVP6-rCn9RMsf02-XiqZcSdCl-CaUyoszKqcKNifQo89jcDcTF-ZsUlTko2RPVPyjAEMRE6_yIbIYcrFivRX10hu4mEJ55vaMiusY4ezN7jrllwFjyCqgusXM-lXMeEVAsq6ZAb4D6SNZFNrAytZRKR_Q_17QdMuxYVi4CYEHOkXPjN8YrPAOXe5uVRDAmBNitiGGIUEyyMX5"/>
+<span class="font-body text-sm font-semibold text-on-surface">Apple</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Footer Help -->
+<footer class="mt-16 text-center lg:text-left w-full max-w-md">
+<p class="text-xs font-label text-outline uppercase tracking-widest">
+                Protected by reCAPTCHA and SmartBook Security Protocol.
+            </p>
+</footer>
+</main>
+<!-- Visual Accent (Bottom Right Floating) -->
+<div class="fixed bottom-8 right-8 hidden xl:block pointer-events-none opacity-20">
+<span class="font-headline font-black text-9xl tracking-tighter text-surface-container-highest select-none">SB</span>
+</div>
+</body></html>
